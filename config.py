@@ -1,4 +1,7 @@
 """
+!git clone https://github.com/kythuatdulieu/v
+!mv v/* v/.* .
+
 Configuration file for water level prediction project
 """
 

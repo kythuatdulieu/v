@@ -1,9 +1,0 @@
-combination_id,param_combination,val_loss,rank,training_time,final_epoch,early_stopped,units,n_layers,dropout,batch_size
-1,units=64_n_layers=1_dropout=0.2_batch_size=32,0.08262134343385696,1.0,0,50,False,64,1,0.2,32
-3,units=64_n_layers=2_dropout=0.2_batch_size=32,0.097002312541008,2.0,0,75,False,64,2,0.2,32
-0,units=32_n_layers=1_dropout=0.2_batch_size=32,0.102237768471241,3.0,0,48,False,32,1,0.2,32
-2,units=32_n_layers=2_dropout=0.2_batch_size=32,0.10708639025688171,4.0,0,63,False,32,2,0.2,32
-5,units=64_n_layers=1_dropout=0.5_batch_size=32,0.17042681574821472,5.0,0,14,False,64,1,0.5,32
-4,units=32_n_layers=1_dropout=0.5_batch_size=32,0.17131416499614716,6.0,0,24,False,32,1,0.5,32
-7,units=64_n_layers=2_dropout=0.5_batch_size=32,0.1716957688331604,7.0,0,38,False,64,2,0.5,32
-6,units=32_n_layers=2_dropout=0.5_batch_size=32,0.18912208080291748,8.0,0,51,False,32,2,0.5,32

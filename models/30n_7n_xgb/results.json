@@ -1,0 +1,94 @@
+{
+  "config_name": "30n_7n",
+  "model_type": "XGBoost",
+  "best_params": {
+    "learning_rate": 0.1,
+    "max_depth": 5,
+    "n_estimators": 500,
+    "subsample": 1.0
+  },
+  "best_cv_score": -0.027917201900933913,
+  "best_cv_std": 0.015408303010440997,
+  "total_cv_combinations": 81,
+  "train_metrics": {
+    "MAE": 0.026973485941403103,
+    "MSE": 0.0012529439268353483,
+    "RMSE": 0.03539694798757865,
+    "R2": 0.9963953844664702
+  },
+  "test_metrics": {
+    "MAE": 0.14662142476486154,
+    "MSE": 0.06424647306183578,
+    "RMSE": 0.2534688798685862,
+    "R2": 0.8090107926098805
+  },
+  "cv_summary": {
+    "best_score": -0.027917201900933913,
+    "best_std": 0.015408303010440997,
+    "worst_score": -0.08321553946300686,
+    "score_range": 0.05529833756207295,
+    "avg_fit_time": 12.156661910775266,
+    "avg_score_time": 0.047636774832329136
+  },
+  "data_shapes": {
+    "X_train": [
+      7411,
+      180
+    ],
+    "X_test": [
+      1826,
+      180
+    ],
+    "y_train": [
+      7411
+    ],
+    "y_test": [
+      1826
+    ]
+  },
+  "feature_count": 180,
+  "top_10_features": [
+    {
+      "feature": "lag_29d_Can Tho_Water Level",
+      "importance": 0.5189013481140137
+    },
+    {
+      "feature": "lag_28d_Dai Ngai_Water Level",
+      "importance": 0.145948588848114
+    },
+    {
+      "feature": "lag_30d_Chau Doc_Water Level",
+      "importance": 0.04211518168449402
+    },
+    {
+      "feature": "lag_4d_Can Tho_Rainfall",
+      "importance": 0.019226936623454094
+    },
+    {
+      "feature": "lag_4d_Dai Ngai_Water Level",
+      "importance": 0.01413636188954115
+    },
+    {
+      "feature": "lag_5d_Can Tho_Rainfall",
+      "importance": 0.013335544615983963
+    },
+    {
+      "feature": "lag_28d_Can Tho_Water Level",
+      "importance": 0.011526442132890224
+    },
+    {
+      "feature": "lag_22d_Chau Doc_Water Level",
+      "importance": 0.01112272497266531
+    },
+    {
+      "feature": "lag_1d_Dai Ngai_Water Level",
+      "importance": 0.00893847644329071
+    },
+    {
+      "feature": "lag_13d_Can Tho_Water Level",
+      "importance": 0.007393898442387581
+    }
+  ],
+  "trained_at": "2025-10-03T23:55:19.225281",
+  "random_seed": 28112001
+}

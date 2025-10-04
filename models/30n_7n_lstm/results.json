@@ -1,0 +1,60 @@
+{
+  "config_name": "30n_7n",
+  "model_type": "LSTM",
+  "best_params": {
+    "batch_size": 32,
+    "dropout": 0.2,
+    "n_layers": 2,
+    "units": 64
+  },
+  "best_val_loss": 0.08274716883897781,
+  "train_metrics": {
+    "MAE": 0.0974835595824051,
+    "MSE": 0.03316957032573483,
+    "RMSE": 0.18212515017354092,
+    "R2": 0.904573903208389
+  },
+  "test_metrics": {
+    "MAE": 0.32168021468030855,
+    "MSE": 0.2611458570452152,
+    "RMSE": 0.5110243213832539,
+    "R2": 0.22367660241404186
+  },
+  "grid_summary": {
+    "total_combinations": 8,
+    "successful_combinations": 8,
+    "best_val_loss": 0.08274716883897781,
+    "worst_val_loss": 0.19352592527866364,
+    "mean_val_loss": 0.13587197940796614,
+    "std_val_loss": 0.04429676534134262,
+    "val_loss_range": 0.11077875643968582,
+    "avg_training_time": 0.0,
+    "total_training_time": 0.0
+  },
+  "data_shapes": {
+    "X_train": [
+      7411,
+      30,
+      6
+    ],
+    "X_test": [
+      1826,
+      30,
+      6
+    ],
+    "y_train": [
+      7411
+    ],
+    "y_test": [
+      1826
+    ]
+  },
+  "model_params": {
+    "total_params": 51265,
+    "trainable_params": 51265
+  },
+  "grid_search_combinations": 8,
+  "training_epochs": 57,
+  "trained_at": "2025-10-04T00:29:45.705859",
+  "random_seed": 28112001
+}

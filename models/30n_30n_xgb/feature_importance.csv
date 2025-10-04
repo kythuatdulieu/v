@@ -1,0 +1,181 @@
+feature,importance
+lag_27d_Can Tho_Water Level,0.18820153
+lag_5d_Dai Ngai_Water Level,0.03047061
+lag_28d_Chau Doc_Water Level,0.029340433
+lag_6d_Can Tho_Water Level,0.024121601
+lag_25d_Dai Ngai_Water Level,0.021317093
+lag_27d_Dai Ngai_Water Level,0.01983345
+lag_7d_Dai Ngai_Water Level,0.018943978
+lag_29d_Chau Doc_Water Level,0.018159157
+lag_27d_Can Tho_Rainfall,0.018075485
+lag_2d_Can Tho_Rainfall,0.01488469
+lag_10d_Dai Ngai_Water Level,0.013390898
+lag_28d_Can Tho_Water Level,0.013000093
+lag_2d_Dai Ngai_Water Level,0.012789914
+lag_3d_Can Tho_Water Level,0.011589341
+lag_17d_Dai Ngai_Water Level,0.011139978
+lag_6d_Dai Ngai_Water Level,0.0106912395
+lag_24d_Dai Ngai_Water Level,0.010626374
+lag_30d_Can Tho_Water Level,0.010140134
+lag_8d_Dai Ngai_Water Level,0.010106825
+lag_7d_Chau Doc_Water Level,0.008950145
+lag_6d_Chau Doc_Water Level,0.008855762
+lag_24d_Can Tho_Water Level,0.008583201
+lag_17d_Can Tho_Water Level,0.007577387
+lag_6d_Chau Doc_Rainfall,0.0074070166
+lag_15d_Dai Ngai_Water Level,0.006798845
+lag_18d_Can Tho_Water Level,0.0067003025
+lag_25d_Can Tho_Water Level,0.0065869493
+lag_15d_Can Tho_Water Level,0.006457647
+lag_26d_Dai Ngai_Water Level,0.0063777114
+lag_20d_Chau Doc_Water Level,0.006046211
+lag_30d_Dai Ngai_Water Level,0.0059562987
+lag_23d_Can Tho_Water Level,0.005922286
+lag_16d_Dai Ngai_Water Level,0.005841376
+lag_3d_Dai Ngai_Water Level,0.0056646075
+lag_5d_Can Tho_Water Level,0.0056112376
+lag_10d_Can Tho_Water Level,0.0056016073
+lag_24d_Chau Doc_Water Level,0.005453073
+lag_23d_Dai Ngai_Water Level,0.0054373224
+lag_7d_Can Tho_Water Level,0.005408199
+lag_19d_Dai Ngai_Water Level,0.0053878897
+lag_16d_Chau Doc_Rainfall,0.005313716
+lag_28d_Can Tho_Rainfall,0.005210663
+lag_2d_Can Tho_Water Level,0.004999229
+lag_12d_Dai Ngai_Water Level,0.004983258
+lag_26d_Can Tho_Water Level,0.004941675
+lag_14d_Chau Doc_Water Level,0.0049415394
+lag_25d_Can Tho_Rainfall,0.0048341327
+lag_16d_Chau Doc_Water Level,0.004808893
+lag_14d_Dai Ngai_Water Level,0.0047427933
+lag_12d_Chau Doc_Water Level,0.0046925806
+lag_22d_Dai Ngai_Water Level,0.004621344
+lag_13d_Chau Doc_Rainfall,0.0045155846
+lag_28d_Dai Ngai_Water Level,0.0044902563
+lag_23d_Dai Ngai_Rainfall,0.0044773906
+lag_4d_Dai Ngai_Water Level,0.0043277857
+lag_19d_Chau Doc_Water Level,0.004299194
+lag_7d_Chau Doc_Rainfall,0.0042350516
+lag_29d_Can Tho_Water Level,0.004214715
+lag_11d_Can Tho_Water Level,0.004177574
+lag_20d_Chau Doc_Rainfall,0.0041026683
+lag_12d_Can Tho_Water Level,0.0039754487
+lag_8d_Can Tho_Water Level,0.003965119
+lag_25d_Chau Doc_Water Level,0.003928241
+lag_2d_Dai Ngai_Rainfall,0.0038999757
+lag_27d_Chau Doc_Water Level,0.0038921456
+lag_28d_Chau Doc_Rainfall,0.0038767287
+lag_21d_Dai Ngai_Water Level,0.003847417
+lag_18d_Chau Doc_Water Level,0.0038153073
+lag_24d_Chau Doc_Rainfall,0.0037677002
+lag_26d_Chau Doc_Water Level,0.0037496614
+lag_29d_Dai Ngai_Water Level,0.0036798406
+lag_16d_Can Tho_Water Level,0.0035675457
+lag_18d_Dai Ngai_Water Level,0.0035344912
+lag_12d_Chau Doc_Rainfall,0.0034725796
+lag_5d_Dai Ngai_Rainfall,0.0034642012
+lag_18d_Can Tho_Rainfall,0.0034622047
+lag_10d_Chau Doc_Water Level,0.0034324643
+lag_4d_Dai Ngai_Rainfall,0.0034289001
+lag_21d_Can Tho_Water Level,0.0034153764
+lag_11d_Chau Doc_Rainfall,0.0034112183
+lag_3d_Can Tho_Rainfall,0.003313258
+lag_17d_Chau Doc_Water Level,0.0033057516
+lag_1d_Dai Ngai_Water Level,0.0032344768
+lag_4d_Can Tho_Water Level,0.0032320612
+lag_9d_Dai Ngai_Rainfall,0.0032216595
+lag_14d_Chau Doc_Rainfall,0.0031864422
+lag_30d_Chau Doc_Water Level,0.0031704735
+lag_11d_Chau Doc_Water Level,0.0031538568
+lag_12d_Can Tho_Rainfall,0.0030948801
+lag_20d_Dai Ngai_Water Level,0.003057659
+lag_1d_Can Tho_Water Level,0.0030563485
+lag_22d_Can Tho_Water Level,0.0029852283
+lag_19d_Can Tho_Water Level,0.0029588558
+lag_10d_Can Tho_Rainfall,0.002943683
+lag_13d_Can Tho_Water Level,0.0029236358
+lag_5d_Chau Doc_Water Level,0.0028965226
+lag_25d_Chau Doc_Rainfall,0.0028543375
+lag_11d_Dai Ngai_Water Level,0.0028208457
+lag_5d_Chau Doc_Rainfall,0.0027862103
+lag_22d_Chau Doc_Water Level,0.0027030741
+lag_19d_Chau Doc_Rainfall,0.0026854894
+lag_1d_Chau Doc_Water Level,0.0026766562
+lag_21d_Chau Doc_Water Level,0.0026677635
+lag_3d_Chau Doc_Water Level,0.0026378685
+lag_8d_Chau Doc_Water Level,0.0026311895
+lag_13d_Dai Ngai_Water Level,0.002594639
+lag_19d_Dai Ngai_Rainfall,0.002552569
+lag_5d_Can Tho_Rainfall,0.0025501684
+lag_23d_Chau Doc_Water Level,0.0025264781
+lag_15d_Chau Doc_Water Level,0.002473203
+lag_9d_Can Tho_Water Level,0.0024606064
+lag_22d_Can Tho_Rainfall,0.0024569207
+lag_8d_Chau Doc_Rainfall,0.0023896918
+lag_15d_Chau Doc_Rainfall,0.002364567
+lag_26d_Can Tho_Rainfall,0.0023456619
+lag_2d_Chau Doc_Rainfall,0.002339001
+lag_9d_Chau Doc_Water Level,0.002323712
+lag_29d_Chau Doc_Rainfall,0.0023213858
+lag_26d_Dai Ngai_Rainfall,0.0022516085
+lag_14d_Can Tho_Water Level,0.0022490495
+lag_19d_Can Tho_Rainfall,0.0022360296
+lag_2d_Chau Doc_Water Level,0.0022318815
+lag_21d_Chau Doc_Rainfall,0.0022034047
+lag_9d_Dai Ngai_Water Level,0.0022013455
+lag_17d_Dai Ngai_Rainfall,0.002189579
+lag_18d_Chau Doc_Rainfall,0.002158538
+lag_3d_Chau Doc_Rainfall,0.002132724
+lag_10d_Dai Ngai_Rainfall,0.0021035327
+lag_12d_Dai Ngai_Rainfall,0.0020952579
+lag_23d_Chau Doc_Rainfall,0.0020945696
+lag_27d_Chau Doc_Rainfall,0.002090632
+lag_13d_Chau Doc_Water Level,0.0020632462
+lag_9d_Can Tho_Rainfall,0.0020614509
+lag_20d_Can Tho_Water Level,0.0020541477
+lag_20d_Can Tho_Rainfall,0.002035497
+lag_29d_Can Tho_Rainfall,0.0020020271
+lag_11d_Can Tho_Rainfall,0.001997149
+lag_21d_Can Tho_Rainfall,0.0019789834
+lag_11d_Dai Ngai_Rainfall,0.001971506
+lag_30d_Dai Ngai_Rainfall,0.00195538
+lag_16d_Can Tho_Rainfall,0.001934769
+lag_14d_Can Tho_Rainfall,0.0018632805
+lag_4d_Chau Doc_Water Level,0.0018394002
+lag_30d_Chau Doc_Rainfall,0.0018257323
+lag_25d_Dai Ngai_Rainfall,0.0018166698
+lag_28d_Dai Ngai_Rainfall,0.001814869
+lag_1d_Chau Doc_Rainfall,0.0017908573
+lag_13d_Dai Ngai_Rainfall,0.0017467155
+lag_24d_Can Tho_Rainfall,0.0017403368
+lag_4d_Can Tho_Rainfall,0.0017180854
+lag_4d_Chau Doc_Rainfall,0.0016825359
+lag_24d_Dai Ngai_Rainfall,0.0016524981
+lag_8d_Dai Ngai_Rainfall,0.0016253294
+lag_18d_Dai Ngai_Rainfall,0.0016232252
+lag_6d_Can Tho_Rainfall,0.0015932418
+lag_15d_Dai Ngai_Rainfall,0.001582069
+lag_27d_Dai Ngai_Rainfall,0.0015704863
+lag_22d_Chau Doc_Rainfall,0.0015312155
+lag_15d_Can Tho_Rainfall,0.0015139311
+lag_6d_Dai Ngai_Rainfall,0.0014902764
+lag_16d_Dai Ngai_Rainfall,0.0014881119
+lag_30d_Can Tho_Rainfall,0.001461729
+lag_8d_Can Tho_Rainfall,0.0014513351
+lag_10d_Chau Doc_Rainfall,0.0014292453
+lag_17d_Chau Doc_Rainfall,0.001362512
+lag_3d_Dai Ngai_Rainfall,0.0013499641
+lag_17d_Can Tho_Rainfall,0.0013281658
+lag_13d_Can Tho_Rainfall,0.0013280247
+lag_14d_Dai Ngai_Rainfall,0.0012819793
+lag_20d_Dai Ngai_Rainfall,0.0012760598
+lag_1d_Dai Ngai_Rainfall,0.0012445082
+lag_7d_Can Tho_Rainfall,0.001165077
+lag_21d_Dai Ngai_Rainfall,0.001137233
+lag_29d_Dai Ngai_Rainfall,0.0010879695
+lag_26d_Chau Doc_Rainfall,0.0010778173
+lag_22d_Dai Ngai_Rainfall,0.0010544221
+lag_23d_Can Tho_Rainfall,0.0010068304
+lag_9d_Chau Doc_Rainfall,0.0010009257
+lag_7d_Dai Ngai_Rainfall,0.0009225133
+lag_1d_Can Tho_Rainfall,0.00037111796

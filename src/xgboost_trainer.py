@@ -25,13 +25,20 @@ class XGBoostTrainer:
         self.feature_importance = None
         
     def load_data(self, data_folder):
-        """Load training data"""
+        """Load training data from .npz files"""
         folder = f"{data_folder}/{self.config_name}_xgb"
         
-        self.X_train = pd.read_csv(f"{folder}/X_train.csv")
-        self.X_test = pd.read_csv(f"{folder}/X_test.csv")
-        self.y_train = pd.read_csv(f"{folder}/y_train.csv").iloc[:, 0]
-        self.y_test = pd.read_csv(f"{folder}/y_test.csv").iloc[:, 0]
+        # Load from .npz compressed format (optimized in notebook 02)
+        X_train_npz = np.load(f"{folder}/train_X.npz")
+        X_test_npz = np.load(f"{folder}/test_X.npz")
+        y_train_npz = np.load(f"{folder}/train_y.npz")
+        y_test_npz = np.load(f"{folder}/test_y.npz")
+        
+        # Extract arrays using correct key names
+        self.X_train = X_train_npz['X_train']
+        self.X_test = X_test_npz['X_test']
+        self.y_train = y_train_npz['y_train']
+        self.y_test = y_test_npz['y_test']
         
         print(f"Loaded data for {self.config_name}:")
         print(f"  X_train: {self.X_train.shape}")
@@ -45,38 +52,52 @@ class XGBoostTrainer:
                     n_jobs=-1, verbose=1):
         """Perform grid search with time series cross validation"""
         
-        print(f"\\nStarting grid search for {self.config_name}...")
+        print(f"\nStarting grid search for {self.config_name}...")
         print(f"Parameter grid: {param_grid}")
         print(f"CV folds: {cv_folds}")
+        
+        # Calculate total fits
+        from itertools import product
+        total_combinations = len(list(product(*param_grid.values())))
+        total_fits = total_combinations * cv_folds
+        print(f"Total combinations: {total_combinations}")
+        print(f"Total fits (with {cv_folds} folds): {total_fits}")
         
         # Time series split to maintain temporal order
         tscv = TimeSeriesSplit(n_splits=cv_folds)
         
-        # XGBoost regressor
+        # XGBoost regressor with memory optimization
         xgb_model = xgb.XGBRegressor(
             random_state=self.random_seed,
-            n_jobs=1  # Set to 1 to avoid conflicts with GridSearchCV n_jobs
+            n_jobs=1,  # Set to 1 to avoid conflicts with GridSearchCV n_jobs
+            tree_method='hist',  # Memory-efficient histogram method
+            max_bin=256  # Reduce memory by limiting histogram bins
         )
         
-        # Grid search
+        # Grid search with reduced parallelism to save memory
+        # Use n_jobs=2 instead of -1 to avoid spawning too many processes
+        actual_n_jobs = min(2, n_jobs) if n_jobs == -1 else n_jobs
+        print(f"Using n_jobs={actual_n_jobs} (reduced from {n_jobs} to save memory)")
+        
         self.grid_search_cv = GridSearchCV(
             estimator=xgb_model,
             param_grid=param_grid,
             cv=tscv,
             scoring=scoring,
-            n_jobs=n_jobs,
+            n_jobs=actual_n_jobs,
             verbose=verbose,
             return_train_score=True
         )
         
         # Fit
+        print(f"Starting GridSearchCV fit...")
         self.grid_search_cv.fit(self.X_train, self.y_train)
         
         # Store results
         self.best_params = self.grid_search_cv.best_params_
         self.cv_results = pd.DataFrame(self.grid_search_cv.cv_results_)
         
-        print(f"\\nBest parameters: {self.best_params}")
+        print(f"\nBest parameters: {self.best_params}")
         print(f"Best CV score: {self.grid_search_cv.best_score_:.6f}")
         
         return self

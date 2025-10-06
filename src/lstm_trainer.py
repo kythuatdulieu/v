@@ -54,15 +54,22 @@ class LSTMTrainer:
         set_seeds(random_seed)
         
     def load_data(self, data_folder):
-        """Load training data"""
+        """Load training data from .npz files"""
         from sklearn.preprocessing import StandardScaler
         
         folder = f"{data_folder}/{self.config_name}_lstm"
         
-        self.X_train = np.load(f"{folder}/X_train.npy")
-        self.X_test = np.load(f"{folder}/X_test.npy")
-        y_train_raw = np.load(f"{folder}/y_train.npy")
-        y_test_raw = np.load(f"{folder}/y_test.npy")
+        # Load from .npz compressed format (optimized in notebook 02)
+        X_train_npz = np.load(f"{folder}/train_X.npz")
+        X_test_npz = np.load(f"{folder}/test_X.npz")
+        y_train_npz = np.load(f"{folder}/train_y.npz")
+        y_test_npz = np.load(f"{folder}/test_y.npz")
+        
+        # Extract arrays using correct key names
+        self.X_train = X_train_npz['X_train']
+        self.X_test = X_test_npz['X_test']
+        y_train_raw = y_train_npz['y_train']
+        y_test_raw = y_test_npz['y_test']
         
         # Handle different y shapes - FIXED: Don't average multi-step targets
         if len(y_train_raw.shape) > 1 and y_train_raw.shape[1] > 1:
